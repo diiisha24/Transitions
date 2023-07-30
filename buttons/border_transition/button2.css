@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0e524d;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 13px 32px;
+  margin: 0px 3px 6px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: transparent;
+  white-space: nowrap;
+  z-index: 0;
+} 
+  /* Fade transition */
+  .button-container .border-fade:hover {
+    border:2px solid transparent;
+  }
+  
+
+  /* Reverse transition */
+.button-container .border-reverse{
+    transition: border-top-color 0.1s linear 0.21s, border-right-color 0.1s linear 0.14s, border-bottom-color 0.1s linear 0.07s, border-left-color 0.1s linear 0s;
+    border-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+} 
+.button-container .border-reverse:hover {
+    border-color: initial;
+    transition: border-top-color 0.1s linear 0s, border-right-color 0.1s linear 0.07s, border-bottom-color 0.1s linear 0.14s, border-left-color 0.1s linear 0.21s;
+    border-color: transparent;
+}
+
+/* Spin transition */
+.button-container .border-spin {
+    border-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    transition: border-top-color 0.1s linear 0s, border-right-color 0.1s linear 0.07s, border-bottom-color 0.1s linear 0.14s, border-left-color 0.1s linear 0.21s;
+} 
+.button-container .border-spin:hover{
+    border-color: initial;
+    border-color: transparent;
+    transition: border-top-color 0.1s linear 0s, border-right-color 0.1s linear 0.07s, border-bottom-color 0.1s linear 0.14s, border-left-color 0.1s linear 0.21s;
+}
+/* Left reverse transition */
+.button-container .border-left-reverse  {
+    border-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    transition: border-top-color 0.1s linear 0.14s, border-right-color 0.1s linear 0.07s, border-bottom-color 0.1s linear 0s;
+} 
+.button-container .border-left-reverse:hover {
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transition: border-top-color 0.1s linear 0s, border-right-color 0.1s linear 0.07s, border-bottom-color 0.1s linear 0.14s;
+}
+/* Left spin transition */
+.button-container .border-left-spin  {
+    border-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    transition: border-top-color 0.1s linear 0.14s, border-right-color 0.1s linear 0.07s, border-bottom-color 0.1s linear 0s;
+} 
+.button-container .border-left-spin:hover {
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transition: border-top-color 0.1s linear 0.14s, border-right-color 0.1s linear 0.07s, border-bottom-color 0.1s linear 0s;
+} 
+  /* Right reverse transition */
+.button-container .border-right-reverse{
+    border-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    transition: border-bottom-color 0.1s linear 0.14s, border-left-color 0.1s linear 0.07s, border-top-color 0.1s linear 0s;
+} 
+
+.button-container .border-right-reverse:hover{
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transition: border-bottom-color 0.1s linear 0s, border-left-color 0.1s linear 0.07s, border-top-color 0.1s linear 0.14s;
+} 
+  /* Right spin transition */
+  .button-container .border-right-spin{
+    border-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    transition: border-bottom-color 0.1s linear 0.14s, border-left-color 0.1s linear 0.07s, border-top-color 0.1s linear 0s;
+} 
+
+.button-container .border-right-spin:hover{
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transition: border-bottom-color 0.1s linear 0.14s, border-left-color 0.1s linear 0.07s, border-top-color 0.1s linear 0s;
+} 
+
+  
